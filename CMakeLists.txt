@@ -42,7 +42,7 @@ set(TNKL_LIBRARY_SRCS
 	src/plugin.cpp
 	include/tnkl/plugin.h
 )
-add_library(tnkl ${TNKL_LIBRARY_SRCS})
+add_library(tnkl SHARED ${TNKL_LIBRARY_SRCS})
 target_link_libraries(tnkl ${TNKL_TARGET_LINK_LIBS})
 target_compile_definitions(tnkl PRIVATE ${TNKL_TARGET_COMPILE_DEFS})
 list(APPEND TNKL_TARGET_LINK_LIBS tnkl)
