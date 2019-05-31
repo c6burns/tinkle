@@ -52,5 +52,5 @@ add_custom_command(
 	POST_BUILD
 	COMMAND ${CMAKE_COMMAND} -E copy
 		$<TARGET_FILE:tnkl>
-		${CMAKE_CURRENT_SOURCE_DIR}/UnityProject/Assets/Plugins/x86_64/$<TARGET_FILE_NAME:tnkl>
+		${CMAKE_CURRENT_SOURCE_DIR}/UnityProject/Assets/Plugins/tinkle/x86_64/$<TARGET_FILE_NAME:tnkl>
 )

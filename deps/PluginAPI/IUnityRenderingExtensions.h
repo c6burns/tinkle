@@ -1,3 +1,9 @@
+// Unity Native Plugin API copyright © 2015 Unity Technologies ApS
+//
+// Licensed under the Unity Companion License for Unity - dependent projects--see[Unity Companion License](http://www.unity3d.com/legal/licenses/Unity_Companion_License).
+//
+// Unless expressly provided otherwise, the Software under this license is made available strictly on an “AS IS” BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.Please review the license for details on these and other terms and conditions.
+
 #pragma once
 
 
@@ -284,11 +290,19 @@ typedef enum UnityRenderingExtTextureFormat
     kUnityRenderingExtFormatYUV2,
 
     // Automatic formats, back-end decides
-    kUnityRenderingExtFormatLDRAuto,
-    kUnityRenderingExtFormatHDRAuto,
     kUnityRenderingExtFormatDepthAuto,
     kUnityRenderingExtFormatShadowAuto,
-    kUnityRenderingExtFormatVideoAuto, kUnityRenderingExtFormatLast = kUnityRenderingExtFormatVideoAuto, // Remove?
+    kUnityRenderingExtFormatVideoAuto,
+
+    // ASTC hdr profile
+    kUnityRenderingExtFormatRGBA_ASTC4X4_UFloat,
+    kUnityRenderingExtFormatRGBA_ASTC5X5_UFloat,
+    kUnityRenderingExtFormatRGBA_ASTC6X6_UFloat,
+    kUnityRenderingExtFormatRGBA_ASTC8X8_UFloat,
+    kUnityRenderingExtFormatRGBA_ASTC10X10_UFloat,
+    kUnityRenderingExtFormatRGBA_ASTC12X12_UFloat,
+
+    kUnityRenderingExtFormatLast = kUnityRenderingExtFormatRGBA_ASTC12X12_UFloat, // Remove?
 } UnityRenderingExtTextureFormat;
 
 

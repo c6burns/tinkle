@@ -1,3 +1,9 @@
+// Unity Native Plugin API copyright © 2015 Unity Technologies ApS
+//
+// Licensed under the Unity Companion License for Unity - dependent projects--see[Unity Companion License](http://www.unity3d.com/legal/licenses/Unity_Companion_License).
+//
+// Unless expressly provided otherwise, the Software under this license is made available strictly on an “AS IS” BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.Please review the license for details on these and other terms and conditions.
+
 #pragma once
 
 
@@ -20,7 +26,7 @@ enum UnityShaderCompilerExtCompilerPlatform
     kUnityShaderCompilerExtCompPlatformUnused2,
     kUnityShaderCompilerExtCompPlatformUnused3,
     kUnityShaderCompilerExtCompPlatformD3D11,           // Direct3D 11 (FL10.0 and up), compiled with MS D3DCompiler
-    kUnityShaderCompilerExtCompPlatformGLES20,          // OpenGL ES 2.0 / WebGL 1.0, compiled with hlsl2glslfork + glsl-optimizer
+    kUnityShaderCompilerExtCompPlatformGLES20,          // OpenGL ES 2.0 / WebGL 1.0, compiled with MS D3DCompiler + HLSLcc
     kUnityShaderCompilerExtCompPlatformUnused6,
     kUnityShaderCompilerExtCompPlatformUnused7,
     kUnityShaderCompilerExtCompPlatformUnused8,
@@ -82,6 +88,11 @@ enum UnityShaderCompilerExtGPUProgramType
     kUnityShaderCompilerExtGPUProgramTargetMetalFS = 24,
     kUnityShaderCompilerExtGPUProgramTargetSPIRV = 25,
     kUnityShaderCompilerExtGPUProgramTargetUnused1 = 26,
+    kUnityShaderCompilerExtGPUProgramTargetUnused2 = 27,
+    kUnityShaderCompilerExtGPUProgramTargetUnused3 = 28,
+    kUnityShaderCompilerExtGPUProgramTargetUnused4 = 29,
+    kUnityShaderCompilerExtGPUProgramTargetUnused5 = 30,
+
     kUnityShaderCompilerExtGPUProgramTargetCount
 };
 
